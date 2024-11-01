@@ -1,0 +1,101 @@
+body {
+    height: 100vh;
+    margin: unset;
+    background-color: hsl(210, 46%, 95%);
+    font-family: "Manrope", sans-serif;
+    color: hsl(212, 23%, 69%);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin-inline: 5%;
+    margin-block: 10%;
+    border-radius: 3%;
+}
+
+h1 {
+    font-size: 1em;
+    color: hsl(217, 19%, 35%);
+}
+
+p {
+    font-size: 0.8125em;
+    color: hsl(214, 17%, 51%);
+    margin-bottom: 0%;
+}
+
+.authorContainer {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+.shareContainer  {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    background-color: hsl(217, 19%, 35%);
+    border: none;
+    border-bottom-left-radius: 3%;
+    border-bottom-right-radius: 3%;
+}
+
+.hidden {
+    display: none;
+}
+
+.avatar {
+    width: 55%;
+    border-radius: 100%;
+    margin-inline: 20%;
+    margin-block: 10%;
+}
+
+.authorName {
+    font-weight: bold;
+}
+
+.date {
+    margin-top: 2%;
+}
+
+.shareText {
+    width: 55%;
+    border-radius: 100%;
+    margin-inline: 20%;
+    margin-block: 10%;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    letter-spacing:0.5em;
+}
+
+.socialMediaIcons {
+    margin-block: 10%;
+}
+
+svg {
+    margin-inline: 5%;
+}
+
+button {
+    border: none;
+    border-radius: 100%;
+    margin-inline: 20%;
+    margin-block: 10%;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width:450px){
+    img {
+        border-top-left-radius: 3%;
+        border-top-right-radius: 3%;
+    }
+}
