@@ -6,13 +6,13 @@ body {
     color: hsl(212, 23%, 69%);
 }
 
-.container {
+.container, .textContainer {
     display: flex;
     flex-direction: column;
     background-color: white;
     margin-inline: 5%;
     margin-block: 10%;
-    border-radius: 3%;
+    border-radius: 10px;
 }
 
 h1 {
@@ -82,13 +82,14 @@ button {
     border: none;
     border-radius: 100%;
     margin-inline: 20%;
-    margin-block: 10%;
+    margin-block: 6%;
 }
 
 .attribution { 
-    font-size: 11px; 
+    font-size: 0.8em; 
     text-align: center;
 }
+
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 }
@@ -97,5 +98,207 @@ button {
     img {
         border-top-left-radius: 3%;
         border-top-right-radius: 3%;
+    }
+
+    .desktopShareContainer {
+        display: none;
+    }
+}
+
+
+@media (min-width:451px) and (max-width:768px){
+    .container {
+        margin-inline: 20%;
+        margin-block: 15%;
+    }
+
+    button {
+        margin-inline: 22%;
+        margin-block: 6%;
+    }
+
+    img {
+        border-top-left-radius: 3%;
+        border-top-right-radius: 3%;
+    }
+
+    .desktopShareContainer {
+        display: none;
+    }
+}
+
+@media (min-width:962px) and (orientation:landscape){
+    body {
+        display: grid;
+        align-content: center;
+        justify-content: center;
+    }
+
+    img {
+        border-top-left-radius: 3%;
+        border-bottom-left-radius: 3%;
+        width: 40%;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        margin-inline: 6%;
+        margin-block: 10%;
+    }
+    
+    .desktopRightContainer {
+        padding-inline: 3em;
+    }
+
+    .textContainer {
+        display: flex;
+        margin: 0%;
+    }
+
+    .authorContainer {
+        display: grid;
+        grid-template-columns: 0.6fr 3fr 0.6fr;
+        align-items: center;
+    }
+
+    .relativeContainer {
+        position: relative;
+        height: 0;
+    }
+
+    .desktopShareContainer {
+        position: absolute;
+        max-width: fit-content;
+        top: -17.4em;
+        left: 49em;
+        z-index: 2;
+        display: none;
+        grid-template-columns: 2fr 3fr;
+        width: 60%;
+        background-color: hsl(217, 19%, 35%);
+        border-radius: 10px;
+    }
+
+    .shareText {
+        width: 55%;
+        border-radius: 100%;
+        margin-inline: 20%;
+        margin-block: 10%;
+        padding-right: 1.2em;
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        letter-spacing:0.4em;
+    }
+
+    .triangleDown {
+        position: absolute;
+        top: -13.5em;
+        left: 56.5em;
+        z-index: 2;
+        width: 0;
+        height: 0;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 20px solid hsl(217, 19%, 35%);/* Color of the triangle */
+    }
+
+    h1 {
+        font-size: 1.6em;
+        margin-bottom: 0%;
+    }
+
+    p {
+        font-size: 1.1em;
+    }
+
+    .avatar {
+        width: 80%;
+        margin-inline: 0%;
+    }
+
+    button {
+        margin: 0%;
+        height: 70%;
+        width: 80%;
+    }
+}
+
+@media (min-width:1280px){
+    .container {
+        margin-inline: 14%;
+        margin-block: 10%;
+    }
+
+    .desktopShareContainer {
+        top: -18.4em;
+        left: 54.5em;
+    }
+
+    .triangleDown {
+        top: -14.5em;
+        left: 62em;
+    }
+}
+
+@media (min-width:1440px){
+    .container {
+        margin-inline: 18%;
+        margin-block: 10%;
+    }
+
+    .desktopShareContainer {
+        top: -18.8em;
+        left: 59.5em;
+    }
+
+    .triangleDown {
+        top: -15em;
+        left: 67em;
+    }
+}
+
+@media (min-width:2560px){
+    h1 {
+        font-size: 2.3em;
+        margin-bottom: 0%;
+    }
+
+    p {
+        font-size: 1.6em;
+    }
+
+    svg {
+        width: 30px;
+        height: 30px;
+    }
+
+    image {
+        width: 30px;
+        height: 30px;
+    }
+
+    .container {
+        margin-inline: 25%;
+        margin-block: 10%;
+    }
+
+    .desktopRightContainer {
+        padding-bottom: 2%;
+    }
+
+    .desktopShareContainer {
+        top: -30em;
+        left: 101em;
+    }
+
+    .triangleDown {
+        top: -25.2em;
+        left: 112em;
+    }
+
+    .attribution { 
+        font-size: 1.3em;
     }
 }
