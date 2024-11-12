@@ -1,6 +1,6 @@
 function hide() {
     
-    if (screen.width > 768){
+    if (screen.width > 735){
         
         // const container = document.getElementById('authorContainer')
         
