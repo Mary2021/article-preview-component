@@ -29,16 +29,19 @@
       to help you make any room feel complete.
     </p>
   </div>
-
   <div id="authorContainer" class="authorContainer">
     <img alt="avatar image" class="avatar" src="/images/avatar-michelle.jpg">
     <div>
       <p class="authorName">Michelle Appleton</p>
       <p class="date">28 Jun 2020</p>
     </div>
-    <button onclick="hide()" aria-label="Share">
+    <button id="authorContainerButton" onclick="hide()" aria-label="Share">
     <svg width= "20" height="20">
-      <image alt="arrow to right" width="20" height="20" href="/images/icon-share.svg" />
+      <defs>
+        <filter id="colorFilter" color-interpolation-filters="sRGB"> <feColorMatrix type="matrix" values="1 0 0 0 1 0 1 0 0 1 0 0 1 0 1 0 0 0 1 0"></feColorMatrix>
+        </filter> 
+      </defs>
+      <image id="imageAddFilter" alt="arrow to right" width="20" height="20" href="/images/icon-share.svg" />
       Sorry, your browser does not support inline SVG.  
     </svg>
     </button>
@@ -59,9 +62,13 @@
         Sorry, your browser does not support inline SVG.  
       </svg>
     </div>
-    <button onclick="hide()" aria-label="Share">
-    <svg width="20" height="20" >
-      <image width="20" height="20" href="/images/icon-share.svg" />
+    <button id="shareContainerButton" onclick="hide()" aria-label="Share">
+    <svg width="20" height="20">
+      <defs>
+        <filter id="colorFilter" color-interpolation-filters="sRGB"> <feColorMatrix type="matrix" values="1 0 0 0 1 0 1 0 0 1 0 0 1 0 1 0 0 0 1 0"/>
+        </filter> 
+      </defs>
+      <image id="svgArrowImage" width="20" height="20" href="/images/icon-share.svg" filter="url(#colorFilter)" />
       Sorry, your browser does not support inline SVG.  
     </svg>
     </button>

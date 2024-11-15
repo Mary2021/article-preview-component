@@ -1,26 +1,21 @@
 function hide() {
     
     if (screen.width > 735){
-        
-        // const container = document.getElementById('authorContainer')
-        
-        // container.classList.add("hidden")  
-        // console.log(container.classList)
         const desktopShareContainer = document.getElementById('desktopShareContainer')
-        console.log(desktopShareContainer)
-        // desktopShareContainer.classList.remove("hidden")
         desktopShareContainer.style.display = 'grid'
         const triangleDown = document.getElementById('triangleDown')
-        console.log(triangleDown)
-        console.log(triangleDown.classList)
         triangleDown.classList.remove("hidden") 
-        console.log(triangleDown.classList)
-        
+        const button = document.getElementById('authorContainerButton')
+        button.style.backgroundColor = 'hsl(214, 17%, 51%)'
+        const image = document.getElementById('imageAddFilter')
+        image.style.filter = 'url(#colorFilter)'
     } 
     else {
         const container = document.getElementById('authorContainer')
         container.classList.add("hidden")  
         const shareContainer = document.getElementById('shareContainer')
         shareContainer.classList.remove("hidden")
+        const button = document.getElementById('shareContainerButton')
+        button.style.backgroundColor = 'hsl(214, 17%, 51%)'
     }
 }

@@ -83,6 +83,11 @@ button {
     border-radius: 100%;
     margin-inline: 20%;
     margin-block: 6%;
+    background-color:hsl(210, 46%, 95%);
+}
+
+#svgArrowImage {
+    filter:"url(#colorFilter)"
 }
 
 .attribution { 
@@ -505,7 +510,7 @@ body {
         height: 0;
         border-left: 20px solid transparent;
         border-right: 20px solid transparent;
-        border-top: 20px solid hsl(217, 19%, 35%);/* Color of the triangle */
+        border-top: 20px solid hsl(217, 19%, 35%);
     }
 
     h1 {
