@@ -210,7 +210,7 @@ body {
 
 
 /*mobile landscape*/
-@media (min-width:736px) and (max-width:926px) and (orientation:landscape){
+@media (min-width:736px) and (max-width:740px) and (orientation:landscape){
     body {
         display: grid;
         align-content: center;
@@ -281,6 +281,107 @@ body {
         position: absolute;
         top: -7em;
         left: 37em;
+        z-index: 2;
+        width: 0;
+        height: 0;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 20px solid hsl(217, 19%, 35%);/* Color of the triangle */
+    }
+
+    h1 {
+        font-size: 1.2em;
+        margin-bottom: 0%;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .avatar {
+        width: 80%;
+        margin-inline: 0%;
+    }
+
+    button {
+        margin: 0%;
+        height: 70%;
+        width: 80%;
+    }
+}
+
+/*mobile landscape*/
+@media (min-width:741px) and (max-width:926px) and (orientation:landscape){
+    body {
+        display: grid;
+        align-content: center;
+        justify-content: center;
+    }
+
+    img {
+        border-top-left-radius: 3%;
+        border-bottom-left-radius: 3%;
+        border-top-right-radius: 0%;
+        width: 40%;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        margin-inline: 8%;
+        margin-block: 2%;
+    }
+    
+    .desktopRightContainer {
+        padding-inline: 2em;
+        padding-bottom: 2%;
+    }
+
+    .textContainer {
+        display: flex;
+        margin: 0%;
+    }
+
+    .authorContainer {
+        display: grid;
+        grid-template-columns: 0.6fr 3fr 0.6fr;
+        align-items: center;
+    }
+
+    .relativeContainer {
+        position: relative;
+        height: 0;
+    }
+
+    .desktopShareContainer {
+        position: absolute;
+        max-width: fit-content;
+        top: -10.5em;
+        left: 40em;
+        z-index: 2;
+        display: none;
+        grid-template-columns: 2fr 3fr;
+        width: 60%;
+        background-color: hsl(217, 19%, 35%);
+        border-radius: 10px;
+    }
+
+    .shareText {
+        width: 55%;
+        border-radius: 100%;
+        margin-inline: 20%;
+        margin-block: 10%;
+        padding-right: 1.2em;
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        letter-spacing:0.4em;
+    }
+
+    .triangleDown {
+        position: absolute;
+        top: -7em;
+        left: 48em;
         z-index: 2;
         width: 0;
         height: 0;
